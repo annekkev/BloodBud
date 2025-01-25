@@ -2,19 +2,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BloodBud</title>
+    <title>Index- Summary of Blood Report Explained</title>
 
     <link rel="stylesheet" href="../css/default.css">
     <link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet'>
+      
+    <style>
+        .left-container {
+            display: flex;
+            height:500px;
+            width:400px;
+            flex-flow: column wrap;
+            background-color: grey;
+            margin-right: auto;
+            margin-left: 250px;
+            margin-top: 25px;
+            /* align-content: flex-start; */
+        }
+        
+        .left-container > div {
+            background-color: #fff;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .right-container {
+            display: flex;
+            height:500px;
+            width:400px;
+            flex-flow: column wrap;
+            background-color: grey;
+            margin-left: auto;
+            margin-right: 250px;
+            margin-top: 25px;
+            /* align-content: flex-start; */
+        }
+        
+        .right-container > div {
+            background-color: #fff;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+    </style>
+
 </head>
 <body>
 
-    <h1>Welcome to BloodBud!</h1>
+    <div id="top">
+        <h1>Summary of Blood Report Explained</h1>
+    </div>
 
-    <form action="https://httpbin.org/post" id="fileUploadForm" method="POST">
-        <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="left-container">
+
+        <form action="https://httpbin.org/post" id="fileUploadForm" method="POST">
+            <div>
+                <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    
+    </div>
+
+    <div class="right-container">
+
+        <form action="" id="loginForm">
+            <div>
+                <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    
+    </div>
 
     <div id="fileNames"></div>
     
