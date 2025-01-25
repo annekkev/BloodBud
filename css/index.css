@@ -4,10 +4,12 @@
 }
 
 .container {
-    background-color: grey;
+    background-color: rgba(185, 185, 185, 0.5);
+    border-radius: 20px;
+    min-height:30em;
+    min-width: 20em;
+    text-align: center;
 
-    min-height:25em;
-    min-width: 5em;
 }
 
 #left-container{
@@ -18,4 +20,12 @@
 #right-container{
     margin-right: auto;
     margin-left: 20px;
+}
+
+.button {
+    border-color: transparent;
+}
+
+#placeholderText {
+    
 }
