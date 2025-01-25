@@ -1,9 +1,19 @@
 body {
-    color: blue;
+    color: #2b9a8d;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightblue;
+    background-image: url(../assets/background.png);
+    /* background:linear-gradient(to right, #DEF4F2 33%, #C6EDE8 66%,#DEF4F2 100%); */
     font-family: 'Laila';
+    background-blend-mode: screen;
+
+}
+
+button {
+    font-family: 'Laila';
+    align-self: center;
+    border-radius: 30px;
+    color: #2b9a8d;
 }
