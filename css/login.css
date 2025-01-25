@@ -1,0 +1,15 @@
+#loginFormDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, button {
+    border-color: transparent;
+    background-color: lightgray;
+}
+
+
+#top {
+    flex-direction: row;
+}
