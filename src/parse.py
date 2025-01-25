@@ -1,25 +1,3 @@
-"""
-Utility
---------
-This demo script show how to extract key-value pairs from a page with a
-"predictable" layout, as it can be found in invoices and other formalized
-documents.
-
-In such cases, a text extraction based on "words" leads to results that
-are both, simple and fast and avoid using regular expressions.
-
-The example analyzes an invoice and extracts the date, invoice number, and
-various amounts.
-
-Because of the sort, correct values for each keyword will be found if the
-value's boundary box bottom is not higher than that of the keyword.
-So it could just as well be on the next line. The only condition is, that
-no other text exists in between.
-
-Please note that the code works unchanged also for other supported document
-types, such as XPS or EPUB, etc.
-"""
-
 import pymupdf
 
 doc = pymupdf.open("BloodBud/reports/sample_report.pdf")  # insert document here
