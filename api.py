@@ -9,5 +9,5 @@ os.environ["GLOG_minloglevel"] = "2"
 
 genai.configure(api_key="AIzaSyABrquE_pgOGRGCi8iCeqBbWZs0FOFYz00")
 model = genai.GenerativeModel("gemini-1.5-flash")
-response = model.generate_content("What does RBC stand for?")
+response = model.generate_content("What does it mean if my RBC is 5.2?")
 print(response.text)

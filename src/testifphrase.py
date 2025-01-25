@@ -1,7 +1,7 @@
 import pymupdf
 
 def search_phrase_in_pdf(pdf_path, phrase):
-    doc = pymupdf.open("sample_report2.pdf")
+    doc = pymupdf.open(pdf_path)
     for page_num in range(doc.page_count):
         page = doc[page_num]
         text = page.get_text()
@@ -9,7 +9,7 @@ def search_phrase_in_pdf(pdf_path, phrase):
             return True
     return False
 
-pdf_path = "your_pdf.pdf"
+pdf_path = "reports\sample_report2.pdf"
 phrase = "COMPLETE BLOOD COUNT"
 
 if search_phrase_in_pdf(pdf_path, phrase):

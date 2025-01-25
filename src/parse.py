@@ -22,7 +22,7 @@ types, such as XPS or EPUB, etc.
 
 import pymupdf
 
-doc = pymupdf.open("BloodBud/reports/sample_report.pdf")  # insert document here
+doc = pymupdf.open("reports\sample_report.pdf")  # insert document here
 page = doc[0]
 words = page.get_text("words", sort=True)  
 
