@@ -11,5 +11,10 @@ input, button {
 
 
 #top {
-    flex-direction: row;
+    display:block;
+}
+
+#icon {
+    max-height: 100px;
+    float: right;
 }

@@ -5,9 +5,10 @@
     <title>Index- Summary of Blood Report Explained</title>
 
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet'>
       
-    <style>
+    <!-- <style>
         .left-container {
             display: flex;
             height:500px;
@@ -50,7 +51,7 @@
             font-size: 30px;
         }
 
-    </style>
+    </style> -->
 
 </head>
 <body>
@@ -59,34 +60,37 @@
         <h1>Summary of Blood Report Explained</h1>
     </div>
 
-    <div class="left-container">
+    <div id="parent">
 
-        <form action="https://httpbin.org/post" id="fileUploadForm" method="POST">
-            <div>
-                <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
-            </div>
+        <div class="container" id="left-container">
 
-            <br>
+            <form action="https://httpbin.org/post" id="fileUploadForm" method="POST">
+                <div>
+                    <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
+                </div>
 
-            <button type="submit">Submit</button>
+                <br>
 
-        </form>
-    
-    </div>
+                <button type="submit">Submit</button>
 
-    <div class="right-container">
+            </form>
+        
+        </div>
 
-        <form action="" id="loginForm">
-            <div>
-                <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
-            </div>
+        <div class="container" id="right-container">
 
-            <br>
+            <form action="" id="loginForm">
+                <div>
+                    <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
+                </div>
 
-            <button type="submit">Submit</button>
+                <br>
 
-        </form>
-    
+                <button type="submit">Submit</button>
+
+            </form>
+        
+        </div>
     </div>
 
     <div id="fileNames"></div>
