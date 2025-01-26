@@ -4,18 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BloodBud</title>
 
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../static/css/default.css">
+    <link rel="stylesheet" href="../static/css/login.css">
     <link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet'>
 </head>
 <body>
 
-    <img id="icon" src="../assets/icon.png" alt="BloodBud icon: Patients First">
+    <img id="icon" src="../static/assets/icon.png" alt="BloodBud icon: Patients First">
 
     <h2 style="margin-top:0;">Login:</h2>
 
     <div id="loginFormDiv">
-        <form action="" id="loginForm">
+        <form action="" id="loginForm" method="get">
             <div>
                 <label for="username">Username:</label>
                 <input type="text" id="username" required>
@@ -28,9 +28,9 @@
                 <input type="password" id="password" required>
             </div>
 
-            <br>
+            <a href="http://127.0.0.1:5000/menu/" id="loginBtn">Enter</a>
 
-            <button type="submit" id="loginBtn">Enter</button>
+            
     
         </form>
     </div>
@@ -38,7 +38,7 @@
 
     
     
-    <script src="../js/login.js"></script>
+    <script src="../static/js/login.js"></script>
     
 </body>
 </html>
