@@ -8,14 +8,12 @@ os.environ["GRPC_VERBOSITY"] = "ERROR"
 os.environ["GLOG_minloglevel"] = "2"
 
 def prompt_gemini(report_dict):
-    tests = report_dict.keys()
-    test = "RBC"
-    result = report_dict[test]
     genai.configure(api_key="AIzaSyABrquE_pgOGRGCi8iCeqBbWZs0FOFYz00")
     model = genai.GenerativeModel("gemini-1.5-flash")
     query = create_query(report_dict)
     response = model.generate_content(query)
-    print("\n", response.text)
+    #print("\n", response.text)
+    return response.text
 
 def create_query(report_dict):
     tests = report_dict.keys()

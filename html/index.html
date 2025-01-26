@@ -1,24 +1,68 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BloodBud</title>
+    <title>Index- Summary of Blood Report Explained</title>
 
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reports.css">
     <link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet'>
+
 </head>
+
 <body>
 
-    <h1>Welcome to BloodBud!</h1>
+    <div id="top">
+        <h1>Summary of Blood Report Explained</h1>
+    </div>
 
-    <form action="https://httpbin.org/post" id="fileUploadForm" method="POST">
-        <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <form method="post" enctype="multipart/form-data" id="fileUploadForm" action="../reports/uploadfile.php">
+            <input type="file" id="fileUpload" name="filename" accept=".pdf" required />
+            <!--<button type="submit">Submit</button>-->
+            <br>
+            <br>
+            <a class="card" href="output.html">Submit</a>
+
+        </form>
+    </div>
+
+    <!-- <div id="parent">
+
+        <div class="container" id="left-container">
+
+            <form method="post" enctype="multipart/form-data" id="fileUploadForm" action="../reports/uploadfile.php">
+                <input type="file" id="fileUpload" name="filename" accept=".pdf" required />
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+        <div class="container" id="right-container">
+
+            <p><iframe src="..\..\output.txt" frameborder="0" height="400" widge="95%"></iframe></p>
+
+            <form action="" id="loginForm">
+                <div>
+                    <input type="file" id="fileUpload" name="filename" accept=".pdf" required>
+                </div>
+
+                <br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+    </div> -->
 
     <div id="fileNames"></div>
-    
+
     <script src="../js/index.js"></script>
-    
+
 </body>
+
 </html>
