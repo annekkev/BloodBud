@@ -21,10 +21,12 @@ types, such as XPS or EPUB, etc.
 """
 
 import pymupdf
+import api
 
 doc = pymupdf.open("BloodBud/reports/sample_report.pdf")  # insert document here
 page = doc[0]
 words = page.get_text("words", sort=True)  
+report_dict = {}
 
 # expected information to extract from pdf
 expected_words = ["haemoglobin", "red blood cell", "rbc", "packed cell volume",
@@ -53,3 +55,8 @@ def parse(text, index, x = words):
         except:
             return
 parse2()
+
+f = open("output.txt", "w")
+f.write(api.prompt_gemini(report_dict))
+#print(api.prompt_gemini(report_dict))
+f.close()

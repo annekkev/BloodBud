@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,26 @@
     <link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet'>
 
 </head>
+
 <body>
 
     <div id="top">
         <h1>Summary of Blood Report</h1>
     </div>
 
-    <div id="parent">
+    <div class="container">
+        <!--<form method="post" enctype="multipart/form-data" id="fileUploadForm">-->
+        <form action="https://httpbin.org/post" id="fileUploadForm" method="POST">
+            <input type="file" id="fileUpload" name="filename" accept=".pdf" required />
+            <!--<button type="submit">Submit</button>-->
+            <br>
+            <br>
+            <a class="card" href="http://127.0.0.1:5000/output">Submit</a>
+
+        </form>
+    </div>
+
+    <!--<div id="parent">
 
         <div class="container" id="left-container">
 
@@ -38,13 +52,14 @@
             <h2 id="placeholderText">Please upload a file.</h2>
         
         </div>
-    </div>
+    </div>-->
 
     <div id="fileNames"></div>
 
-    <a style="margin-top:10px;" href="http://127.0.0.1:5000/menu">Back</a>  
-    
+    <a style="margin-top:10px;" href="http://127.0.0.1:5000/menu">Back</a>
+
     <script src="../static/js/index.js"></script>
-    
+
 </body>
+
 </html>
