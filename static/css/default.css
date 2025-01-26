@@ -8,7 +8,7 @@ body {
     /* background:linear-gradient(to right, #DEF4F2 33%, #C6EDE8 66%,#DEF4F2 100%); */
     font-family: 'Laila';
     background-blend-mode: screen;
-
+    background-size:100% 100%;
 }
 
 button {
